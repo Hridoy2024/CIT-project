@@ -24,7 +24,9 @@
  /* Nav */
 
  nav {
+     /* display: none; */
      margin-top: 45px;
+
  }
 
  nav ul {
@@ -61,6 +63,7 @@
  /* Banner */
 
  #Banner {
+    /* display: none; */
      /* width: 1440px; */
      height: 768px;
      /* flex-shrink: 0; */
@@ -69,8 +72,8 @@
  }
 
  #Banner .title {
-     padding: 233px 245px;
-     margin-left: 32px;
+     padding: 233px 0;
+     /* margin-left: 32px; */
 
  }
 
@@ -110,13 +113,29 @@
  /* About */
 
  #about {
-     margin-top: 150px ;
+    /* display: none; */
+     margin-top: 150px;
      margin-bottom: 151px;
+     position: relative;
  }
 
+.about-s-pic-1{
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+}
+
+
+.about-s-pic-2 {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+ 
+
  #about h2 {
-     margin-left: 245px;
-     width: 395px;
+     /* margin-left: 245px; */
+     /* width: 395px; */
      color: #260041;
      font-family: 'Poppins', sans-serif;
      font-size: 36px;
@@ -125,30 +144,35 @@
      line-height: 46px;
      /* 127.778% */
      letter-spacing: 1.8px;
+     text-align: center;
+     margin-bottom: 30px;
  }
 
- .send {
-    margin-top: 149px;
-     /* margin-bottom: 113px; */
-     width: 380px;
-     /* height: 537px; */
-     flex-shrink: 0;
+ .cards {
 
-     /* width: 30%; */
-     height: auto;
-     border-radius: 20px;
-     box-shadow: 0 15px 10px gray ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 70px;
  }
 
- .send img {
+
+ .card-item {
+     background-color: #EDF5FB;
+     padding: 20px;
+     border-radius: 8px;
+ }
+
+
+ .card-item img {
      width: 224px;
      height: 197px;
      flex-shrink: 0;
  }
 
- .send h1 {
+ .card-item h1 {
      color: var(--Text-color, #0F001A);
-     font-family: Objective;
+     font-family: 'Poppins', sans-serif;
      font-size: 20px;
      font-style: normal;
      font-weight: 500;
@@ -157,16 +181,18 @@
      letter-spacing: 0.4px;
  }
 
- .send p {
-     width: 284px;
-     height: 103px;
-     flex-shrink: 0;
+ .card-item p {
+     font-family: 'Poppins', sans-serif;
+     ;
+     /* width: 284px; */
+     /* height: 103px; */
+     /* flex-shrink: 0; */
  }
 
- .send span {
+ .card-item a {
 
      color: #4A99D3;
-     font-family: Objective;
+     font-family: 'Poppins', sans-serif;
      font-size: 14px;
      font-style: normal;
      font-weight: 500;
@@ -175,60 +201,25 @@
  }
 
 
- .recieve {
-     width: 380px;
-     height: 537px;
-     flex-shrink: 0;
-     height: auto;
-     border-radius: 20px;
-     box-shadow: 0 15px 10px gray ;
- }
-
- .recieve h1 {
-    color: var(--Text-color, #0F001A);
-    font-family: Objective;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    /* 150% */
-    letter-spacing: 0.4px;
-}
-
-.recieve p {
-    width: 284px;
-    height: 103px;
-    flex-shrink: 0;
-}
-
-.recieve span {
-
-    color: #4A99D3;
-    font-family: Objective;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    /* 214.286% */
-}
-
 
 
  /* About End */
 
- /* Service */
- #Service {
 
+
+ /* Works*/
+ #Works {
+    
      background: rgba(74, 153, 211, 0.10);
-     /* margin-bottom: 95px; */
+     padding: 95px;
+
  }
 
- .service_text h1 {
-     margin-top: 95px;
+
+
+ .Works_text h1 {
+
      margin-bottom: 88px;
- }
-
- .service_text h1 {
      color: #4A99D3;
      text-align: center;
      font-family: Objective;
@@ -239,8 +230,7 @@
  }
 
  .item {
-     padding-left: 245px;
-     /* text-align: center; */
+     text-align: center;
      /* margin: 0 auto; */
  }
 
@@ -251,13 +241,15 @@
      font-style: normal;
      font-weight: 500;
      line-height: normal;
-     margin-left: -22px;
+     width: 174px;
+     text-align: center;
+     margin: 0 auto;
 
  }
 
  .item p {
-
-     width: 257px;
+     text-align: center;
+     width: 224px;
      color: var(--Text-color, #0F001A);
      text-align: center;
      font-family: 'Poppins', sans-serif;
@@ -265,79 +257,30 @@
      font-style: normal;
      font-weight: 400;
      line-height: 26px;
+     margin: 0 auto;
      /* 162.5% */
-     margin-left: -70px;
+
 
  }
 
  .item img {
      margin-bottom: 30px;
- }
-
-
- /* Service End */
-
- /* Download  */
-
- #download {
-     /* display: none; */
-     padding: 118px 161px;
 
  }
 
- #download .download-text {
 
-     margin-top: 114px;
-     padding-right: 68px;
- }
-
- #download .download-text h1 {
-     color: var(--Text-color, #0F001A);
-     text-align: center;
-     font-family: 'Poppins', sans-serif;
-     font-size: 25px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: normal;
-     margin-right: 90px;
-     margin-bottom: 15.8px;
- }
-
- .download-text p {
-     width: 444px;
-     color: var(--Text-color, #0F001A);
-     text-align: center;
-     font-family: 'Poppins', sans-serif;
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 24px;
-     /* 150% */
- }
-
- .download-text img {
-     margin-top: 56px;
- }
-
-
- /* Download End */
-
+ /* Works End */
 
  /* client */
  #Client {
-     position: relative;
+    /* display: none; */
+    
      background: white;
      margin-top: 150px;
-     /* padding-bottom: 200px; */
 
  }
 
- /* .sidepic{
-   
-        position: absolute;
-        top: -55px;
-        right: 0;
-    } */
+
 
 
 
@@ -357,7 +300,7 @@
  #Client .client-text h1 {
      color: var(--Text-color, #0F001A);
      text-align: center;
-     font-family: Objective;
+     font-family: 'Poppins', sans-serif;
      font-size: 26px;
      font-style: normal;
      font-weight: 700;
@@ -367,16 +310,35 @@
 
 
  .left {
+
      border-radius: 0px 6px 6px 0px;
      background: rgba(74, 153, 211, 0.10);
-     width: 677px;
+     width: 100%;
      height: 400px;
-     flex-shrink: 0;
+     /* flex-shrink: 0; */
  }
 
  .left img {
      margin-top: -120px;
-     margin-left: 160px;
+     position: absolute;
+     bottom: -36px;
+     left: 0px;
+     z-index: -1;
+
+ }
+
+ .right-text {
+     padding-left: 100px;
+
+ }
+
+
+ /* .right img {
+     padding-left: 100px;
+ } */
+
+ .right-text img{
+    width:50px
 
  }
 
@@ -402,6 +364,12 @@
      margin-top: 40px;
  }
 
+ .buttons{
+    margin-left: -12px;
+    width: 150px !important;
+
+ }
+
  /* .right-text img{
     margin-top: 180px;
     width: 160px;
@@ -409,83 +377,81 @@ height: 80px;
 
 
  } */
-
+/* 
  .right-text img {
      margin-bottom: -194px;
      width: 160px;
      height: 80px;
      margin-left: 270px;
- }
+ } */
 
  /* client end */
 
+ /* Download  */
 
- /* Footer */
+ #download {
+     position: relative;
+     /* display: none; */
+     padding: 118px 161px;
 
- #footer {
-     display: none;
-     padding-top: 55.34px;
-     /* background: #4A99D3; */
-     /* width: 1440px; */
-     /* height: 350px;
-flex-shrink: 0; */
  }
 
- #footer img {
-     padding-left: 124px;
-     color: #FFFFFF;
+ .download-f-1 {
+     position: absolute;
+     bottom: -36px;
+     left: 0px;
+     z-index: -1;
+ }
+
+  .download-f-2 {
+        position: absolute;
+        bottom: -60px;
+        right: 0px;
+        z-index: -1;
+    }
+
+
+
+ #download .download-text {
+
+     margin-top: 114px;
+     padding-right: 68px;
+     text-align: center;
+ }
+
+ #download .download-text h1 {
+     color: var(--Text-color, #0F001A);
+     /* text-align: center; */
      font-family: 'Poppins', sans-serif;
-     font-size: 34px;
+     font-size: 25px;
      font-style: normal;
      font-weight: 700;
      line-height: normal;
+     margin-right: 90px;
+     margin-bottom: 15.8px;
  }
 
- #footer .Quick h2 {
-     color: #FFF;
+ .download-text p {
+     width: 444px;
+     color: var(--Text-color, #0F001A);
+     /* text-align: center; */
      font-family: 'Poppins', sans-serif;
-     font-size: 18px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: normal;
-     display: flex;
-     width: 107px;
-     height: 23px;
-     flex-direction: column;
-     justify-content: center;
-     flex-shrink: 0;
-
- }
-
- .Quick ul {
-     list-style: none;
-
- }
-
- .Quick ul li {
-     margin-top: 34px;
-     color: #FFF;
-     font-family: Objective;
-     font-size: 14px;
+     font-size: 16px;
      font-style: normal;
      font-weight: 400;
-     line-height: normal;
+     line-height: 24px;
+     /* 150% */
  }
 
- .footer-text {
-     width: 364px;
-     color: #FFF;
-     font-family: Objective;
-     font-size: 18px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 26px;
-     /* 144.444% */
-
+ .download-text img {
+     padding-top: 56px;
+     padding-right: 107px;
+     /* margin: 0 auto; */
+     /* text-align: center; */
  }
 
- /* Footer End */
 
+ /* Download End */
 
  /* New footer */
 
